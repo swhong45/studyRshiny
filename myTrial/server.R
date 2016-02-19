@@ -2,7 +2,7 @@ library(shiny)
 
 shinyServer(function(input, output) {
    
-  output$distPlot <- renderPlot({
+  output$plot1 <- renderPlot({
     
     # generate bins based on input$bins from ui.R
     x    <- faithful[, 2] 
